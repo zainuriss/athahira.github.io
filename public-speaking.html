@@ -4,93 +4,154 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <title></title>
-    <style>
-      *,
-      html,
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .gradient-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        rotate: 180deg;
-        background: linear-gradient(
-          rgba(255, 255, 255, 1) 20%,
-          rgba(255, 255, 255, 0) 100%
-        );
-      }
-      .immune {
-        rotate: 180deg;
-      }
-
-      .fs-3xl {
-        font-size: xxx-large;
-      }
-      @media (max-width: 768px) {
-        .fs-3xl {
-          font-size: xx-large;
-        }
-      }
-
-      @media (max-width: 576px) {
-        .fs-3xl {
-          font-size: x-large;
-        }
-      }
-
-      .fs-2xl {
-        font-size: xx-large;
-      }
-      .fs-xl {
-        font-size: x-large;
-      }
-      .logo {
-        width: 70px;
-        height: 70px;
-      }
-      @media (max-width: 768px) {
-        .logo {
-          width: 50px;
-          height: 50px;
-        }
-      }
-      @media (max-width: 576px) {
-        .logo {
-          width: 40px;
-          height: 40px;
-        }
-      }
-    </style>
   </head>
   <body class="w-100 h-auto">
-    <div class="container-fluid d-flex flex-column position-relative mt-3">
-        <div class="w-100 h-100 d-flex flex-column justify-content-center align-content-center">
-            <img src="assets/img/cover-img.jpg" alt="" class="img-fluid rounded-1"/>
-            <div class="gradient-overlay"></div>
-        </div>
-        <div class="w-100 h-100 d-flex align-items-center justify-content-center mt-2 flex-column">
-        <div class="wrap align-items-center justify-content-center d-flex flex-row gap-2 w-100 d-flex flex-row my-4">
-            <img src="assets/img/lpk.png" class="img-fluid logo rounded-circle" alt=""/>
-            <img src="assets/img/lkp.png" class="img-fluid logo rounded-circle" alt=""/>
+    <div class="container-fluid d-flex flex-column mt-3">
+      <!-- hero section start -->
+      <div
+        class="w-100 h-100 d-flex flex-column position-relative justify-content-center align-content-center"
+      >
+        <img
+          src="assets/img/cover-img.jpg"
+          alt=""
+          class="img-fluid rounded-1"
+        />
+        <div class="gradient-overlay my-4"></div>
+      </div>
+      <div
+        class="w-100 h-100 d-flex z-2 align-items-center justify-content-center mt-2 flex-column"
+      >
+        <div
+          class="wrap align-items-center justify-content-center d-flex flex-row gap-2 w-100 d-flex flex-row my-4"
+        >
+          <img
+            src="assets/img/lpk.png"
+            class="img-fluid logo rounded-circle"
+            alt=""
+          />
+          <img
+            src="assets/img/lkp.png"
+            class="img-fluid logo rounded-circle"
+            alt=""
+          />
         </div>
         <div class="text-center">
-          <h1 class="fw-bold fs-3xl text-dark">Public Speaking</h1>
-          <p class="">
+          <h1 class="fw-bolder fs-3xl text-dark">
+            Jago Bicara, Kuasai Panggung, Tingkatkan Karier!
+          </h1>
+          <p class="fs-2xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
             pariatur nulla quaerat, praesentium, totam qui non voluptas nobis
             est quos in impedit molestiae eligendi vero sint, ullam perspiciatis
-            dolore animi. Quos, expedita? Obcaecati modi nemo tempore cumque
-            laborum fuga, non veniam, tenetur earum dicta asperiores aperiam
-            deserunt officia soluta similique? Culpa quam dolor incidunt iure
-            esse, distinctio officia repudiandae quia.
+            dolore animi.
+          </p>
+          <p class="fs-2xl">
+            Quos, expedita? Obcaecati modi nemo tempore cumque laborum fuga, non
+            veniam, tenetur earum dicta asperiores aperiam deserunt officia
+            soluta similique? Culpa quam dolor incidunt iure esse, distinctio
+            officia repudiandae quia.
           </p>
         </div>
+        <!-- hero section end -->
+        <!-- Carousel start -->
+        <span class="border border-dark w-75 h-75 rounded-circle my-4"></span>
+        <div class="wrap">
+          <div class="text-center">
+            <h1 class="fw-bolder fs-3xl text-dark">
+              Emang Public Speaking itu
+              <span class="bg-warning">Penting</span> ya?
+            </h1>
+          </div>
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide mt-4"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card d-block w-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Raden Oemar Said Tjokroaminoto</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      Pendiri Sarekat Islam
+                    </h6>
+                    <p class="card-text">
+                      Jika kalian ingin menjadi Pemimpin besar, menulislah
+                      seperti wartawan dan
+                      <span class="bg-warning">bicaralah</span> seperti orator
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card d-block w-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Coach Priska Sahanaya</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">
+                      Kemampuan berbicara di depan umum adalah keterampilan yang
+                      sangat berharga. Jadilah berani untuk mengungkapkan
+                      ide-ide dan pendapat anda. Teruslah berlatih dan
+                      percayalah pada diri sendiri, karena setiap orang memiliki
+                      potensi untuk menjadi pembicara yang luar biasa
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card d-block w-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Coach Priska Sahanaya</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">
+                      Kemampuan berbicara di depan umum adalah keterampilan yang
+                      sangat berharga. Jadilah berani untuk mengungkapkan
+                      ide-ide dan pendapat anda. Teruslah berlatih dan
+                      percayalah pada diri sendiri, karena setiap orang memiliki
+                      potensi untuk menjadi pembicara yang luar biasa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="border border-dark w-75 h-75 rounded-circle my-4"></span>
+        <!-- Carousel end -->
+        <!-- Program section start -->
+        <div class="">
+          <p class="text-center fs-2xl">ini deskripsi program</p>
+          <div class="card-group">
+            <div class="card rounded">
+              <img src="assets/img/poster-ps-pelajar.jpg" class="card-img-top" alt="Public Speaking Pelajar" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+            <div class="card rounded">
+              <img src="assets/img/poster-ps-umum.png" class="card-img-top" alt="Public Speaking Umum" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Public Speaking Umum</h5>
+                <i class="fa fa-circle text-white"></i><small class="card-text rounded-pill bg-primary p-2 text-white">Kelas Online</small>
+                <p class="card-text mt-2">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Program section end -->
       </div>
     </div>
   </body>
+  <script src="assets/js/main.js"></script>
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>
